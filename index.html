@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Utenti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Registrazione Utente</h1>
+
+        <form id="userForm" autocomplete="one-time-code">
+            <fieldset>
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        class="input-field" 
+                        id="name"
+                        name="nome"
+                        placeholder=" "
+                        autocomplete="one-time-code"
+                    >
+                    <label for="name" class="input-label">Nome</label>
+                    </div>
+
+                    <div class="input-group">
+                    <input 
+                        type="text" 
+                        class="input-field" 
+                        id="cognome"
+                        name="cognome"
+                        placeholder=" "
+                       autocomplete="one-time-code"
+                    >
+                    <label for="phone" class="input-label">Cognome</label>
+                    </div>
+
+                    <div class="input-group">
+                    <input 
+                        type="email" 
+                        class="input-field" 
+                        id="email"
+                        name="email"
+                        placeholder=" "
+                        autocomplete="one-time-code"
+                    >
+                    <label for="email" class="input-label">Email</label>
+                </div>
+            </fieldset>
+        </form>
+
+        <div class="button-group">
+            <button id="submit" type="button" form="userForm">Invia</button>
+            <button type="button" class="add-user-btn">+</button>
+            <button type="button" class="remove-user-btn" disabled >-</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
